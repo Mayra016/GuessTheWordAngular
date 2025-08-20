@@ -1,1 +1,18 @@
-<p>play works!</p>
+<main>
+<app-game-header [lifes]="lifes" [score]="score" [scoreTxt]="scoreTxt" [titleTxt]="titleTxt"></app-game-header>
+<app-clues [clue]="clue" [cluesTxt]="cluesTxt"></app-clues>
+<app-word [sendTxt]="sendTxt" [word]="word" (isCorrect)="onIsCorrect($event)"></app-word>
+<audio id="audio" src="assets/music.mp3" autoplay loop [volume]="volume / 100">
+    Your browser does not support the <code>audio</code> element.
+</audio>    
+<div class="end-screen win-screen" *ngIf="hasWon" [@fadeInOut]>
+    <h1>{{winTxt}}</h1>
+    <button class="send-btn button" (click)="won()">{{nextTxt}}</button>
+
+</div>
+<div class="end-screen lost-screen" *ngIf="hasLost" [@fadeInOut]>
+    <h1>{{lostTxt}}</h1>
+    <p>{{lostScoreTxt}} {{score}}</p>
+    <button class="send-btn button" (click)="lost()">{{playAgainTxt}}</button>
+</div>
+</main>
