@@ -1,0 +1,68 @@
+select {
+    background-color: var(--yellow);
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+p, #config {
+    color: var(--yellow);
+    font-family: 'Spicy Rice';
+    align-items: center;
+}
+
+.language-container, .volume-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 250px;
+    margin: auto;
+    margin-left: 10%;
+}
+
+
+.volume-container {
+    margin-bottom: 30px;
+}
+
+input[type="range"] {
+    -webkit-appearance: none; /* Standard-Style deaktivieren (Chrome/Safari) */
+    appearance: none;
+
+  }
+  
+  /* Button */
+  input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 16px;
+    height: 16px;
+    margin-top: -5px;;
+    border-radius: 50%;
+    background: var(--yellow);
+    cursor: pointer;
+  }
+  
+  /* Track */
+  input[type="range"]::-webkit-slider-runnable-track {
+    height: 6px;
+    border-radius: 5px;
+    background: var(--yellow);
+  }
+  
+  /* Firefox */
+  input[type="range"]::-moz-range-thumb {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: var(--yellow);
+    cursor: pointer;
+  }
+  
+  input[type="range"]::-moz-range-track {
+    height: 6px;
+    border-radius: 5px;
+    background: var(--yellow);
+  }
+  

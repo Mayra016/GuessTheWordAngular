@@ -1,1 +1,38 @@
-<p>configuration works!</p>
+<main>
+
+    <div style="text-align:left;">
+        <button class="menu-btn" routerLink="/menu" >
+            <img src="assets/menu-logo.png">
+        </button>
+    </div>
+    <div class="game-title">
+        <h1>{{titleTxt}}</h1>
+    </div>
+    <div class="menu">
+        <div class="language-container">
+            <p>{{languageTxt}}: </p>
+            <select #languageSelect [(ngModel)]="language" (ngModelChange)="onLanguageChange()">
+                <option value='PT'>🇧🇷</option>
+                <option value='ES'>🇪🇸</option>
+                
+                <!--
+                <option value='en'>🇺🇸</option>
+                <option value='de'>🇩🇪</option>
+                -->
+                
+            </select>
+        </div>
+        <div class="volume-container">
+            <div class="secondary-font">
+                <p class="volume"> {{ volumeTxt }}: </p>
+            </div>
+            <div id="config" class="secondary-font">
+                <input name="volume-slider" [(ngModel)]="volume" (ngModelChange)="onVolumeChange(volume)" type="range" step="1" value="50" min="0" max="100" /><output> {{ volume }}%</output>
+            </div>
+        </div>
+        <audio #audioElement src="assets/music.mp3" autoplay loop></audio>
+
+        <button class="button" routerLink="/menu">{{saveTxt}}</button>
+    </div>
+
+</main>
