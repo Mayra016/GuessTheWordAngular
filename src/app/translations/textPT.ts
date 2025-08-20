@@ -5,7 +5,10 @@ const textPT = {
     configTxt : 'Configurações',
     languageTxt : 'Idioma',
     volumeTxt: 'Volume',
-    saveTxt: 'Salvar'
+    saveTxt: 'Salvar',
+    introTxt: 'Curiosidades e jogos interativos',
+    youtubeTxt: 'Canal do Youtube',
+    youtubeLink: 'https://www.youtube.com/channel/UCLl639MHAMtVgZTio4ZmZCw'
 };
 
 export default textPT;

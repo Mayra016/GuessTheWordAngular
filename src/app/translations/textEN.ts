@@ -5,8 +5,10 @@ const textEN = {
     configTxt : 'Configuration',
     languageTxt : 'Language',
     volumeTxt: 'Volume',
-    saveTxt: 'Save'
-    
+    saveTxt: 'Save',
+    introTxt: 'Curious facts and interactive games',
+    youtubeTxt: 'Youtube channel',
+    youtubeLink: 'https://www.youtube.com/channel/UC4QU_YUEqT1Asxc35chYi8g'
 };
 
 export default textEN;

@@ -5,7 +5,10 @@ const textES = {
     configTxt : 'COnfiguraciones',
     languageTxt : 'Idioma',
     volumeTxt: 'Volumen',
-    saveTxt: 'Guardar'
+    saveTxt: 'Guardar',
+    introTxt: 'Curiosidades y juegos interactivos',
+    youtubeTxt: 'Canal de Youtube',
+    youtubeLink: 'https://www.youtube.com/@peculiaridadesdelmundo'
 };
 
 export default textES;
