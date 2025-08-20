@@ -1,0 +1,114 @@
+.life {
+    width: 50px;
+    height: 3cqmax;
+}
+
+h1 {
+    font-size: 40px;
+    margin-top: -20px;
+}
+
+
+.header-bar {
+    display: block;
+    width: 100%;
+    height: fit-content;
+    text-align: start;
+    justify-content: left;
+    justify-items: left;
+    margin-left: -60px;
+}
+
+
+.scoreHearts {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.score {
+    display: flex;
+    flex-direction: row;
+    font-size: 30px;
+    width: fit-content;
+    gap: 10px;
+    padding: 10px;
+    background-color: var(--yellow);
+    border-radius: 10px;
+    border-color: var(--pink);
+    border-width: 5px;
+    border-style: solid;
+    font-family: 'Spicy Rice';
+    flex-shrink: 0;
+}
+
+h6 {
+    margin-top: 1px;
+    margin-bottom: 1px;
+    padding: 1px 5px;
+    font-size: 15px;
+}
+
+
+.menu-btn {
+    margin-top: -50px;
+    margin-left: -10px;
+}
+
+
+div .lives img:hover {
+	animation: rotate 3s linear infinite;
+	box-shadow: drop-shadow(10px 10px 20px rgba(0, 0, 0, 0.3));
+}
+.tittle {
+    display: flex;
+    flex-direction: column;
+    margin-top: -150px;
+}
+
+h1 {
+    margin-top: -150px;
+}
+
+.tittle h1 {
+    width: 100%;
+}
+.scoreHearts{
+    display:flex;
+    align-items:center;
+    width: 85%;          /* volle Breite, damit space-between greifen kann */
+  }
+  
+  .score{
+    display:flex;
+    padding:10px;
+    margin-right: -100px;
+    flex:0 0 auto;       /* nicht schrumpfen */
+  }
+  
+  .lives{
+    margin-left: fit-content;    /* schiebt den Block ganz nach rechts */
+    display:flex;
+
+    align-items:center;
+  }
+  
+  /* NEGATIVE MARGINS ENTFERNEN */
+  .lives img{
+    margin:0;            /* statt -15px/-38px */
+    width:50px;
+    margin-left: -10px;
+    margin-top: -20px;
+  }
+  
+
+@keyframes rotate {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotateY(360deg);
+	}
+}
+
