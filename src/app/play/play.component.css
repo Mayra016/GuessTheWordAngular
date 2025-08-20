@@ -1,0 +1,76 @@
+
+
+.win-screen, .lost-screen  {
+    position: fixed;
+    top: 30%;
+    left: 25%;
+    text-align: center;
+    margin: auto;
+    background: var(--purple);
+    z-index: 9999;
+    border-color: yellow;
+    border-style: solid;
+    border-radius: 10px;
+    border-width: 5px;
+    padding: 10px;
+}
+
+.lost-screen p {
+    font-family: 'Spicy Rice';
+    color: var(--yellow);
+}
+
+app-game-header, app-word, 
+.win-screen, .lost-screen, main {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+@media(max-width: 12080px) {
+    .win-screen, .lost-screen  {
+        left: 35%;
+    }
+}
+
+@media(max-width: 1080px) {
+    .win-screen, .lost-screen  {
+        text-align: center;
+        left: 20%;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+	div .lives {
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: 60px;
+        padding: 0px;
+        justify-content: right; 
+        flex: 1; 
+        margin-top: 25px;
+    }	
+
+    .tittle {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        align-content: center;
+        margin: 0px;
+        text-align: center;
+        padding: 0px;
+    }
+
+    .win-screen h1, .lost-screen h1 {
+        font-size: 40px;
+    }
+
+    .win-screen, .lost-screen  {
+        text-align: center;
+        margin: auto;
+        top: 35%;
+    }
+}
