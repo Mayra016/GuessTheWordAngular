@@ -4,6 +4,7 @@
 
 .youtube-logo {
     width: 30px;
+    height: auto;
     padding-top: 10px;
     margin-left: -300px;
 }
@@ -16,7 +17,7 @@
 }
 
 div {
-    color: white;
+    color: var(--yellow);
 }
 
 .youtube-infos {
