@@ -2,7 +2,7 @@ const textES = {
     titleTxt: '¡Adivina la palabra!',
     playTxt : 'Jugar',
     infoTxt : 'Información',
-    configTxt : 'COnfiguraciones',
+    configTxt : 'Configuraciones',
     languageTxt : 'Idioma',
     volumeTxt: 'Volumen',
     saveTxt: 'Guardar',
