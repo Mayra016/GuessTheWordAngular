@@ -1,0 +1,55 @@
+.menu-btn img {
+    width: 15px;
+}
+
+.youtube-logo {
+    width: 30px;
+    padding-top: 10px;
+    margin-left: -300px;
+}
+
+.menu-btn {
+    padding: 5px;
+    width: 50px;
+    height: auto;
+    margin-left: -80px;
+}
+
+div {
+    color: white;
+}
+
+.youtube-infos {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-items: center;
+    margin-left: auto;
+    font-weight: bold;
+}
+
+.youtube-infos a {
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+a {
+    cursor: pointer;
+}
+
+.infos {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: auto;
+    justify-content: center;
+}
+
+.tittle {
+    margin-top: -110px;;
+}
+
+.header-bar {
+    height: -350px;
+}
+  

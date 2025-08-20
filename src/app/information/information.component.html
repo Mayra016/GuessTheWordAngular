@@ -1,1 +1,34 @@
-<p>information works!</p>
+
+	<div class="page-background">
+		<div class="container">
+			<div class="header-bar">
+				<button class="menu-btn" routerLink="/menu">
+				    <img class="menu-logo" src="assets/menu-logo.png" alt="menu logo" />
+				</button>
+			</div>
+			
+			<div clas="tittle">
+				<h1>{{titleTxt}}</h1>
+			</div>
+			
+
+			
+			<div class="infos">
+				<div class="intro-text">
+					<h2>{{introTxt}}</h2>
+				</div>
+				<div class="youtube-infos">
+					<img class="youtube-logo" src="assets/youtube-logo.png" alt="youtube-logo"/>
+					<a (click)="redirect()" class="neonEffect">{{youtubeTxt}}</a>
+				</div>
+			</div>	
+			<div class="ornitorrinco">
+				<img src="assets/ornitorrincoVF.png" alt="Logo ornitorrinco">
+			</div>
+
+            <audio id="audio" src="assets/music.mp3" autoplay loop [volume]="volume / 100">
+                Your browser does not support the <code>audio</code> element.
+            </audio>   			
+		</div>
+		
+	</div>
