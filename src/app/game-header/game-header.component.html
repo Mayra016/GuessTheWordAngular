@@ -1,0 +1,19 @@
+<main>
+
+    <div class="header-bar">
+        <button class="menu-btn" routerLink="/menu">
+            <img class="menu-logo" src="assets/menu-logo.png" alt="menu logo" />
+        </button>
+
+    </div>
+    <h1>{{titleTxt}}</h1> 
+        <div class="scoreHearts">
+            <div class="score">
+                <h6>{{scoreTxt}}  </h6><h6>{{score}}</h6>
+            </div>	
+            <div class="lives">
+                <img class="life" *ngFor="let _ of [].constructor(lifes)" src="assets/heart.png"/>
+            </div>
+        </div>
+
+</main>
