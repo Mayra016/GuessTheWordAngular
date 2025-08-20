@@ -1,1 +1,24 @@
-<p>home works!</p>
+
+	<div class="page-background">
+		<div class="container">
+			<div clas="tittle">
+				<h1>{{titleTxt}}</h1>
+			</div>
+			
+			<div class="btns">
+				<button class="button" routerLink="/play" >{{playTxt}}</button>
+				<button class="button" routerLink="/configuration" >{{configTxt}}</button>
+				<button class="button" routerLink="/information" >{{infoTxt}}</button>
+			</div>	
+			<div class="ornitorrinco">
+				<img src="assets/ornitorrincoVF.png" alt="Logo ornitorrinco">
+			</div>
+			
+            <audio id="audio" src="assets/music.mp3" autoplay loop [volume]="volume / 100">
+                Your browser does not support the <code>audio</code> element.
+            </audio>   
+				
+		</div>
+		
+	</div>
+
