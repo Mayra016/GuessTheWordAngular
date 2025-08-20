@@ -1,0 +1,27 @@
+h3, p {
+    color : var(--yellow);
+    font-family: 'Spicy Rice';
+}
+
+.clue, .clues {
+    margin: auto;
+    text-align: left;
+    justify-content: left;
+    width: 800px;
+    margin-left: 530px;
+}
+
+.clues{
+    max-width: 280px;
+    width: 60%;
+    min-width: 0;           
+    margin-left: 530px;  
+  }
+
+  .clues p{
+    white-space: normal;        
+    overflow-wrap: anywhere;    
+    word-break: break-word;    
+    hyphens: auto;            
+  }
+  
