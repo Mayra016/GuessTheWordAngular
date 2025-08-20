@@ -1,0 +1,33 @@
+<div class="btn-letters" [@shakeAnimation]="animationState">
+    <div class="button-grid">
+        <button class="button" *ngFor="let letter of letterBtns; let i = index" (click)="updateInput(i)" [ngStyle]="{
+            'border-color': inputIndexes.includes(i) ? '#4EE3FB' : 'var(--pink)'
+          }">{{ letter }} </button>
+    </div>
+      
+    <!--
+    <div class="btn-line"> 
+        <button class="buttons" (click)="updateInput(1)">{{p1}}</button>
+        <button class="buttons" (click)="updateInput(2)">{{p2}}</button>
+        <button class="buttons" (click)="updateInput(3)">{{p3}}</button>
+        <button class="buttons" (click)="updateInput(4)">{{p4}}</button>
+    </div>
+    <div class="btn-line"> 
+        <button class="buttons" id="" (click)="updateInput(5)">{{p5}}</button>
+        <button class="buttons" id="" (click)="updateInput(6)">{{p6}}</button>
+        <button class="buttons" id="" (click)="updateInput(7)">{{p7}}</button>
+        <button class="buttons" id="" (click)="updateInput(8)">{{p8}}</button>
+    </div>
+    <div class="btn-line"> 
+        <button class="buttons" (click)="updateInput(9)">{{p9}}</button>
+        <button class="buttons" (clic)="updateInput(10)">{{p10}}</button>
+        <button class="buttons" (clic)="updateInput(11)">{{p11}}</button>
+        <button class="buttons" (clic)="updateInput(12)">{{p12}}</button>
+    </div>
+    
+    -->
+</div>
+
+<div class="btn-div">
+    <button class="button" id="userInput" (click)="checkAnswer()">{{sendTxt}}</button>
+</div>
