@@ -31,8 +31,8 @@ export class ConfigurationComponent {
               const langParam = localStorage.getItem('lang');
               const volParam = localStorage.getItem('vol');
           
-              this.language = langParam || localStorage.getItem("lang") || 'EN';
-              this.volume = volParam ? Number(volParam) : Number(localStorage.getItem("vol") || 50);
+              this.language = langParam || localStorage.getItem('lang') || 'EN';
+              this.volume = volParam ? Number(volParam) : Number(localStorage.getItem("vol")) || 50;
 
               if (this.volume != 50) {
                   localStorage.setItem("vol", this.volume.toString());

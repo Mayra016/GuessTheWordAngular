@@ -54,3 +54,30 @@ a {
     height: -350px;
 }
   
+@media only screen and (max-width: 800px) {
+    h1 {
+      font-size: 40px;
+      margin-top: 80px;
+    }
+    .language-container, .volume-container {
+      margin:auto;
+    }
+  
+    .game-title {
+      width: 100%;
+    }
+    main {
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .menu-btn {
+      margin-left: -60px;
+      margin-top: -30px;
+    }
+    .youtube-infos, .youtube-logo {
+        margin: auto;
+        text-align: center;
+        justify-content: center;
+    }
+  }

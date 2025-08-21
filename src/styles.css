@@ -62,7 +62,6 @@
   div .tittle, h1 {
       border-color: var(--yellow);
       -webkit-text-stroke: 2px var(--yellow);
-      text-stroke: 1px var(--yellow);
       font-family: 'Spicy Rice', serif; /* Corregir el nombre de la fuente */
       color: var(--purple);
       text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
@@ -185,4 +184,16 @@ button, a, select {
 .game-title {
     position: fixed;
     top: 200px;
+}
+
+
+
+@media only screen and (max-width: 1080px) {
+    body {
+        margin-left: -10px;
+    }
+
+    .ornitorrinco {
+        margin-left: 30px;
+    }
 }

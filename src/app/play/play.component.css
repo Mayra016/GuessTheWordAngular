@@ -73,4 +73,8 @@ app-game-header, app-word,
         margin: auto;
         top: 35%;
     }
+
+    h1 {
+        margin-top: 20px;
+    }
 }
