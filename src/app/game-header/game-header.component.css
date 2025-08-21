@@ -119,3 +119,18 @@ h1 {
     }
 }
 
+@media only screen and (max-width: 1090px) {
+    .menu-btn {
+        margin-top: 450px;
+    }
+
+    .life {
+        width: 40px;
+        height: auto;
+
+    }
+    .lives {
+        margin-top: 20px;
+    }
+}
+

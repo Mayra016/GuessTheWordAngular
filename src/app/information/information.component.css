@@ -53,7 +53,18 @@ a {
 .header-bar {
     height: -350px;
 }
-  
+
+
+@media only screen and (max-width: 1090px) {
+  h1 {
+    margin-top: -400px;
+  }
+
+  .menu-btn {
+    margin-top: 300px;
+  }
+}
+
 @media only screen and (max-width: 800px) {
     h1 {
       font-size: 40px;
