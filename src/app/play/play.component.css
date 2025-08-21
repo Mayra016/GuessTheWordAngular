@@ -41,40 +41,15 @@ app-game-header, app-word,
         text-align: center;
         left: 20%;
     }
+
+    .menu-btn {
+        margin-top: 120px;
+    }
 }
 
 @media only screen and (max-width: 800px) {
-	div .lives {
-        display: flex;
-        flex-wrap: wrap;
-        margin-left: 60px;
-        padding: 0px;
-        justify-content: right; 
-        flex: 1; 
-        margin-top: 25px;
-    }	
-
-    .tittle {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        align-content: center;
-        margin: 0px;
-        text-align: center;
-        padding: 0px;
-    }
-
-    .win-screen h1, .lost-screen h1 {
-        font-size: 40px;
-    }
-
-    .win-screen, .lost-screen  {
-        text-align: center;
+    main {
         margin: auto;
-        top: 35%;
-    }
-
-    h1 {
-        margin-top: 20px;
+        margin-top: 300px;
     }
 }

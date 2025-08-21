@@ -103,7 +103,6 @@ export class WordComponent {
 
     for (let i = 0; i < this.possibleMoves[this.move].length; i++) {
       this.letterBtns.push(String(this.word?.charAt(this.possibleMoves[this.move][i] - 1)).toUpperCase());
-      console.log(this.letterBtns[i]);
     }
   }
   
@@ -119,8 +118,7 @@ export class WordComponent {
     } else {
       this.inputIndexes.push(letterIndex);
     }
-  
-    console.log(this.inputIndexes);
+
   }
   
 
@@ -130,7 +128,6 @@ export class WordComponent {
     
     if (this.inputIndexes.length !== letters.length) {
       this.animationState = 'shake';
-      console.log("length");
       this.isCorrect.emit(false);
       return;
     }
@@ -139,7 +136,6 @@ export class WordComponent {
     for (let i = 0; i < letters.length; i++) {
       if (String(this.word?.charAt(i)).toLowerCase() !== this.letterBtns[this.inputIndexes[i]].toLowerCase()) {
         correct = false;
-        console.log(this.word?.charAt(i) + "  " + this.letterBtns[this.inputIndexes[i]]);
         break;
       }
       

@@ -1,22 +1,17 @@
 .life {
     width: 50px;
-    height: 3cqmax;
+    height: auto;
 }
 
 h1 {
     font-size: 40px;
-    margin-top: -20px;
+    margin-top: 220px;
 }
 
 
 .header-bar {
-    display: block;
-    width: 100%;
-    height: fit-content;
-    text-align: start;
-    justify-content: left;
-    justify-items: left;
-    margin-left: -60px;
+    margin-left: -200px;
+    margin-top: -100px;
 }
 
 
@@ -52,10 +47,14 @@ h6 {
 
 
 .menu-btn {
-    margin-top: -50px;
+    margin-top: -100px;
     margin-left: -10px;
 }
 
+.menu-btn img {
+    padding-top: 10px;
+    padding-left: 5px;
+}
 
 div .lives img:hover {
 	animation: rotate 3s linear infinite;
@@ -64,11 +63,11 @@ div .lives img:hover {
 .tittle {
     display: flex;
     flex-direction: column;
-    margin-top: -150px;
+    margin-top: 150px;
 }
 
 h1 {
-    margin-top: -150px;
+    margin-top: 50px;
 }
 
 .tittle h1 {
@@ -77,7 +76,7 @@ h1 {
 .scoreHearts{
     display:flex;
     align-items:center;
-    width: 85%;          /* volle Breite, damit space-between greifen kann */
+    width: 85%;        
   }
   
   .score{
@@ -88,10 +87,9 @@ h1 {
   }
   
   .lives{
-    margin-left: fit-content;    /* schiebt den Block ganz nach rechts */
+    margin-left: fit-content;
     display:flex;
-
-    align-items:center;
+    margin-top: 20px;
   }
   
   /* NEGATIVE MARGINS ENTFERNEN */
@@ -113,19 +111,36 @@ h1 {
 }
 
 @media only screen and (max-width: 800px) {
+
     .life {
         width: 40px;
         height: auto;
+    }
+
+    h1 {
+        margin-top: -500px;
+    }
+
+    .header-bar {
+        margin-top: -500px;
+    }
+
+    h1 {
+        margin-top: 40px;
+    }
+
+    .scoreHearts {
+        margin: auto;
     }
 }
 
 @media only screen and (max-width: 1090px) {
     .menu-btn {
-        margin-top: 450px;
+        margin-top: 20px;
     }
 
     .life {
-        width: 40px;
+        width: 10px;
         height: auto;
 
     }

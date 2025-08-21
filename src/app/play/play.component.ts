@@ -102,8 +102,6 @@ export class PlayComponent {
     this.word = this.file[level][this.wordIndex];
     this.clue = this.file[level][this.wordIndex + 1];
 
-    console.log(this.word);
-    console.log(this.clue);
 
   }
 
@@ -129,12 +127,10 @@ export class PlayComponent {
   onIsCorrect(answer: boolean) {
     if (answer) {
       this.score += this.levelPoints;
-      console.log(this.score);
       this.hasWon = true;
     } else {
       if (this.lifes > 1) {
         this.lifes--;
-        console.log(this.lifes);
       } else {
         this.hasLost = true;
       }  
@@ -188,6 +184,7 @@ export class PlayComponent {
       this.wordTxt = textEN.wordTxt;
       this.scoreTxt = textEN.scoreTxt;
       this.titleTxt = textEN.titleTxt;
+      this.wordIndex = 6;
     }
     if (this.language == "DE") {
       this.lostScoreTxt = textDE.lostScore;
@@ -200,6 +197,7 @@ export class PlayComponent {
       this.wordTxt = textDE.wordTxt;
       this.scoreTxt = textDE.scoreTxt;
       this.titleTxt = textDE.titleTxt;
+      this.wordIndex = 9;
     }
     if (this.language == "PT") {
       this.lostScoreTxt = textPT.lostScore;

@@ -16,5 +16,8 @@
     .button-grid button {
         width: 60px;
     }
+    .btn-letters {
+        margin-top: 0px;
+    }
 }
   
