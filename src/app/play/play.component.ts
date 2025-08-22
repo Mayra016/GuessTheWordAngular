@@ -184,7 +184,8 @@ export class PlayComponent {
       this.wordTxt = textEN.wordTxt;
       this.scoreTxt = textEN.scoreTxt;
       this.titleTxt = textEN.titleTxt;
-      this.wordIndex = 6;
+      this.wordIndex = 8;
+      this.maxLevels = 152;
     }
     if (this.language == "DE") {
       this.lostScoreTxt = textDE.lostScore;
@@ -197,7 +198,8 @@ export class PlayComponent {
       this.wordTxt = textDE.wordTxt;
       this.scoreTxt = textDE.scoreTxt;
       this.titleTxt = textDE.titleTxt;
-      this.wordIndex = 9;
+      this.wordIndex = 12;
+      this.maxLevels = 107;
     }
     if (this.language == "PT") {
       this.lostScoreTxt = textPT.lostScore;

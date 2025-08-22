@@ -130,7 +130,11 @@ h1 {
     }
 
     .scoreHearts {
+        display: flex;
         margin: auto;
+        text-align: center;
+        justify-content: center;
+        gap: 130px;
     }
 }
 

@@ -14,7 +14,7 @@ import textPT from '../translations/textPT';
   styleUrl: './configuration.component.css'
 })
 export class ConfigurationComponent {
-    language: string = "ES";
+    language: string = "EN";
     volume: number = 50;
     volIn: HTMLInputElement | null = null;
     volOut: HTMLElement | null = null;
