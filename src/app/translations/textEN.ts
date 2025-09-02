@@ -19,7 +19,7 @@ const textEN = {
     lostScore: 'Your score: ',
     playAgainTxt: 'Play again',
     sendTxt: 'Send',
-    lostWordTxt: 'The asnwer was: ',
+    lostWordTxt: 'The answer was: ',
     helpText: 'Clean all letters'
 };
 
