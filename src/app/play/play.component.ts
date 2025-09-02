@@ -56,6 +56,7 @@ export class PlayComponent {
   wordTxt: string = textEN.wordTxt;
   scoreTxt: string = textEN.scoreTxt;
   titleTxt: string = textEN.titleTxt;
+  lostWordTxt: string = textEN.lostWordTxt;
 
   constructor(private route:ActivatedRoute) {}
 
@@ -170,6 +171,8 @@ export class PlayComponent {
       this.wordTxt = textES.wordTxt;
       this.scoreTxt = textES.scoreTxt;
       this.titleTxt = textES.titleTxt;
+      this.lostWordTxt = textES.lostWordTxt;
+
       this.maxLevels = 182;
       this.wordIndex = 0;
     }
@@ -184,6 +187,8 @@ export class PlayComponent {
       this.wordTxt = textEN.wordTxt;
       this.scoreTxt = textEN.scoreTxt;
       this.titleTxt = textEN.titleTxt;
+      this.lostWordTxt = textEN.lostWordTxt;
+
       this.wordIndex = 8;
       this.maxLevels = 152;
     }
@@ -198,6 +203,8 @@ export class PlayComponent {
       this.wordTxt = textDE.wordTxt;
       this.scoreTxt = textDE.scoreTxt;
       this.titleTxt = textDE.titleTxt;
+      this.lostWordTxt = textDE.lostWordTxt;
+
       this.wordIndex = 12;
       this.maxLevels = 107;
     }
@@ -212,6 +219,8 @@ export class PlayComponent {
       this.wordTxt = textPT.wordTxt;
       this.scoreTxt = textPT.scoreTxt;
       this.titleTxt = textPT.titleTxt;
+      this.lostWordTxt = textPT.lostWordTxt;
+      
       this.maxLevels = 155;
       this.wordIndex = 3;
     }

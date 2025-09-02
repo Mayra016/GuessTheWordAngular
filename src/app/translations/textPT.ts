@@ -18,7 +18,8 @@ const textPT = {
     lostTxt: 'Você perdeu!',
     lostScore: 'Sua puntuação: ',
     playAgainTxt: 'Nova partida',
-    sendTxt: 'Enviar'
+    sendTxt: 'Enviar',
+    lostWordTxt: 'A palavra é: '
 };
 
 export default textPT;

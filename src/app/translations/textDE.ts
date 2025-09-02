@@ -18,7 +18,8 @@ const textDE = {
     lostTxt: 'Verloren!',
     lostScore: 'Deine Punkte: ',
     playAgainTxt: 'Nochmal spielen',
-    sendTxt: 'Senden'
+    sendTxt: 'Senden',
+    lostWordTxt: 'Die Antwort lautet: '
 };
 
 export default textDE;

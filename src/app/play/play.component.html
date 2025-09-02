@@ -13,6 +13,7 @@
 <div class="end-screen lost-screen" *ngIf="hasLost" [@fadeInOut]>
     <h1>{{lostTxt}}</h1>
     <p>{{lostScoreTxt}} {{score}}</p>
+    <p>{{lostWordTxt}} {{word}}</p>
     <button class="send-btn button" (click)="lost()">{{playAgainTxt}}</button>
 </div>
 </main>

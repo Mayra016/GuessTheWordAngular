@@ -18,7 +18,8 @@ const textEN = {
     lostTxt: 'You have lost!',
     lostScore: 'Your score: ',
     playAgainTxt: 'Play again',
-    sendTxt: 'Send'
+    sendTxt: 'Send',
+    lostWordTxt: 'The asnwer was: '
 };
 
 export default textEN;
