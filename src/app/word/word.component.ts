@@ -1,4 +1,4 @@
-import { Component, EventEmitter, Input, Output } from '@angular/core';
+import { Component, ElementRef, EventEmitter, Input, Output, QueryList, ViewChildren } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { CommonModule, NgFor } from '@angular/common';
 import { animate, keyframes, style, transition, trigger } from '@angular/animations';
@@ -119,6 +119,14 @@ export class WordComponent {
       this.inputIndexes.push(letterIndex);
     }
 
+  }
+
+  @ViewChildren('letterBtn') buttons!: QueryList<ElementRef<HTMLButtonElement>>;
+  clearUserInput() {
+    this.inputIndexes = [];
+    this.buttons.forEach(btn => {
+      btn.nativeElement.style.borderColor = '#dc8add';
+    });
   }
   
 

@@ -8,9 +8,24 @@
 
 
 .btn-div {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
     margin-top: 30px;
 }
 
+.clean-logo {
+    width: 30px;
+    height: auto;
+    
+}
+
+.clean {
+    border-radius: 50%;
+    width: 60px;
+    padding: 5px;
+}
 
 @media only screen and (max-width: 800px) {
     .button-grid button {

@@ -1,6 +1,6 @@
 <div class="btn-letters" [@shakeAnimation]="animationState">
     <div class="button-grid">
-        <button class="button" *ngFor="let letter of letterBtns; let i = index" (click)="updateInput(i)" [ngStyle]="{
+        <button #letterBtn class="button" *ngFor="let letter of letterBtns; let i = index" (click)="updateInput(i)" [ngStyle]="{
             'border-color': inputIndexes.includes(i) ? '#4EE3FB' : 'var(--pink)'
           }">{{ letter }} </button>
     </div>
@@ -8,5 +8,6 @@
 </div>
 
 <div class="btn-div">
+    <button class="button clean" (click)="clearUserInput()"><img class="clean-logo" src="assets/clearIcon.png"/></button>
     <button class="button" id="userInput" (click)="checkAnswer()">{{sendTxt}}</button>
 </div>
