@@ -1,7 +1,7 @@
 <main>
 <app-game-header [lifes]="lifes" [score]="score" [scoreTxt]="scoreTxt" [titleTxt]="titleTxt"></app-game-header>
 <app-clues [clue]="clue" [cluesTxt]="cluesTxt"></app-clues>
-<app-word [sendTxt]="sendTxt" [word]="word" (isCorrect)="onIsCorrect($event)"></app-word>
+<app-word [sendTxt]="sendTxt" [word]="word" [helpText]="helpText" (isCorrect)="onIsCorrect($event)"></app-word>
 <audio id="audio" src="assets/music.mp3" autoplay loop [volume]="volume / 100">
     Your browser does not support the <code>audio</code> element.
 </audio>    

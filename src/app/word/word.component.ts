@@ -2,6 +2,7 @@ import { Component, ElementRef, EventEmitter, Input, Output, QueryList, ViewChil
 import { FormsModule } from '@angular/forms';
 import { CommonModule, NgFor } from '@angular/common';
 import { animate, keyframes, style, transition, trigger } from '@angular/animations';
+import textEN from '../translations/textEN';
 
 
 @Component({
@@ -42,6 +43,7 @@ export class WordComponent {
 
   @Input() sendTxt: string | undefined;
   @Input() word: string | undefined;
+  @Input() helpText: string | undefined;
   @Output() isCorrect = new EventEmitter<boolean>();
   
   animationState: string = 'none';
@@ -62,6 +64,7 @@ export class WordComponent {
   p12: string = "";
 
   letterBtns: string[] = [];
+
 
 
   possibleMoves: number[][] = [

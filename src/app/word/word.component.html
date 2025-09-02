@@ -8,6 +8,6 @@
 </div>
 
 <div class="btn-div">
-    <button class="button clean" (click)="clearUserInput()"><img class="clean-logo" src="assets/clearIcon.png"/></button>
+    <button class="button clean" [title]="helpText" (click)="clearUserInput()"><img class="clean-logo" src="assets/clearIcon.png"/></button>
     <button class="button" id="userInput" (click)="checkAnswer()">{{sendTxt}}</button>
 </div>

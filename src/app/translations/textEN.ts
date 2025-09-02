@@ -19,7 +19,8 @@ const textEN = {
     lostScore: 'Your score: ',
     playAgainTxt: 'Play again',
     sendTxt: 'Send',
-    lostWordTxt: 'The asnwer was: '
+    lostWordTxt: 'The asnwer was: ',
+    helpText: 'Clean all letters'
 };
 
 export default textEN;

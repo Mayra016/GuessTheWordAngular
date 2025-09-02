@@ -19,7 +19,8 @@ const textES = {
     lostScore: 'Tu puntuación: ',
     playAgainTxt: 'Jugar otra vez',
     sendTxt: 'Enviar',
-    lostWordTxt: 'La palabra es: '
+    lostWordTxt: 'La palabra es: ',
+    helpText: 'Limpiar todas las letras'
 };
 
 export default textES;
